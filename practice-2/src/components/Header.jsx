@@ -4,8 +4,11 @@ import logoPhoneMenu from "../assets/logo-bookmark.png";
 import closeIcon from "../assets/icon-close.svg";
 import facebook from "../assets/icon-facebook.svg";
 import twitter from "../assets/icon-twitter.svg";
+import { useState } from "react";
 
 function Header() {
+  const [opened, setOpened] = useState(false);
+
   return (
     <header>
       <nav>
@@ -13,10 +16,12 @@ function Header() {
           <img src={logo} alt="Bookmark logo" />
         </div>
         <div>
-          <div id="burger-menu">
+          <div id="burger-menu" onClick={() => setOpened(!opened)}>
             <img src={burgerIcon} alt="Burger icon" />
           </div>
-          <div className="nav-links-mobile">
+          <div
+            className={opened ? "nav-links-mobile opened" : "nav-links-mobile"}
+          >
             <div>
               <div>
                 <img src={logoPhoneMenu} alt="Bookmark logo (phone version)" />
@@ -24,6 +29,7 @@ function Header() {
                   src={closeIcon}
                   id="close-btn"
                   alt="Burger menu close button"
+                  onClick={() => setOpened(!opened)}
                 />
               </div>
               <a href="#">Features</a>

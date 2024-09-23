@@ -14,7 +14,7 @@ function Footer() {
           <a href="#">Contact</a>
         </div>
       </div>
-      <div className="icons">
+      <div className="icons justify-content-center">
         <img src={facebook} alt="Facebook icon" />
         <img src={twitter} alt="Twitter icon" />
       </div>

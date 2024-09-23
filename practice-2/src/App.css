@@ -145,7 +145,7 @@ nav .nav-links-mobile.opened {
   padding: var(--padding-phone);
 }
 
-body.opened-menu {
+html.opened-menu {
   overflow-y: hidden;
 }
 
@@ -488,7 +488,7 @@ nav .nav-links-mobile.opened > div > div img {
   width: 100%;
 }
 
-#download-extension .browser-cards > div {
+#download-extension .browser-cards > li {
   box-shadow: 0 5px 12px hsla(231, 69%, 60%, 0.2);
   border-radius: 10px;
   align-items: center;
@@ -496,11 +496,11 @@ nav .nav-links-mobile.opened > div > div img {
   padding: 40px 20px 20px 20px;
 }
 
-#download-extension .browser-cards > div > div {
+#download-extension .browser-cards > li > div {
   flex-direction: column;
 }
 
-#download-extension .browser-cards > div > div img {
+#download-extension .browser-cards > li > div img {
   margin-bottom: 40px;
   height: 150px;
 }
@@ -509,17 +509,17 @@ nav .nav-links-mobile.opened > div > div img {
   width: 100%;
 }
 
-#download-extension .browser-cards > div > div h3 {
+#download-extension .browser-cards > li > div h3 {
   margin-bottom: 6px;
 }
 
-#download-extension .browser-cards > div > div p {
+#download-extension .browser-cards > li > div p {
   text-align: center;
   color: var(--grey-clr);
   margin-bottom: 20px;
 }
 
-#download-extension .browser-cards > div button {
+#download-extension .browser-cards > li button {
   width: 100%;
   margin-top: 20px;
 }
@@ -768,6 +768,7 @@ footer > div {
 
 footer .icons {
   flex-direction: row;
+  gap: 20px;
 }
 
 /* TABLET */
