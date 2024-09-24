@@ -10,16 +10,12 @@ function Form() {
         <input
           type="text"
           name="email-input"
-          id="input"
           placeholder="Enter your email address"
           required
         />
-        <input
-          type="submit"
-          id="submit-btn"
-          className="primary-btn"
-          value="Contact Us"
-        />
+        <button id="submit-btn" className="primary-btn">
+          Contact Us
+        </button>
       </form>
     </section>
   );
